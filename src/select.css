@@ -1,0 +1,91 @@
+.selectdiv {
+    position: relative;
+    float: left;
+    width: 400px;
+}
+  select::-ms-expand {
+    display: none;
+  }
+  .selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 5px;
+    top: 18px;
+    padding: 0 0 2px;
+    position: absolute;
+    
+  }
+  
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding-left: 3px;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+    width: 100%;    
+
+    
+  }
+  iframe {
+      display: none;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+ }
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+   }
+ }
+  .loading {
+    position: relative;
+    z-index: 0;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+ }
+  .loading::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image:  linear-gradient(#0cd0f3, #ffffff);
+    animation: rotate 2s linear infinite;
+ }
+  .loading::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 1px;
+    top: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background:#279cbf;
+    border-radius: 1px;
+ }
+  

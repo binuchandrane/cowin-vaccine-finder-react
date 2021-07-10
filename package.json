@@ -1,0 +1,45 @@
+{
+  "name": "com.plantabo.vaccinefinder",
+  "displayName": "Vaccine Finder",
+  "version": "1.0.0",
+  "description": "Cowin vaccine finder using React js. Find slot availability. You can use autofetch to check availability. Play a syron when slot found. ",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:chrome": "./script/build.sh",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettify": "prettier --write \"src/**/*.js\""
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "rimraf": "^3.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "prettier": "^2.0.5"
+  },
+  "homepage": "./"
+}
